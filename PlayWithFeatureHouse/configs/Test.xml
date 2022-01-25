@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature automatic="selected" name="ApoGame"/>
+	<feature automatic="selected" name="Entity"/>
+	<feature automatic="selected" name="Player"/>
+	<feature automatic="selected" name="Game"/>
+	<feature automatic="selected" manual="selected" name="Buttons"/>
+	<feature automatic="selected" manual="selected" name="Credit"/>
+	<feature automatic="selected" manual="selected" name="Editor"/>
+	<feature automatic="selected" manual="selected" name="LevelChooser"/>
+	<feature automatic="selected" manual="selected" name="Menu"/>
+	<feature automatic="selected" manual="selected" name="Model"/>
+	<feature automatic="selected" manual="selected" name="Options"/>
+	<feature automatic="selected" name="Level"/>
+	<feature automatic="selected" name="Tools"/>
+	<feature name="Language"/>
+	<feature automatic="selected" name="Help"/>
+	<feature automatic="selected" name="Image"/>
+	<feature name="Visibility"/>
+	<feature automatic="selected" name="Input"/>
+	<feature manual="selected" name="KeyBoard"/>
+	<feature name="Mouse"/>
+	<feature name="MouseReleased"/>
+	<feature name="MousePressed"/>
+	<feature name="MouseMoved"/>
+	<feature name="MouseDragged"/>
+	<feature name="Sound"/>
+	<feature name="SoundWin"/>
+	<feature name="SoundLoose"/>
+	<feature name="SoundBackground"/>
+	<feature name="SoundPop"/>
+</configuration>

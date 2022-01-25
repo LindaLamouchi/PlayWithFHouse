@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<calculations key="tautology" value="true"/>
+		<calculations key="auto" value="true"/>
+		<graphics key="legendposition" value="1070,275"/>
+		<calculations key="redundant" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+		<calculations key="features" value="true"/>
+		<graphics key="autolayoutconstraints" value="false"/>
+		<graphics key="legendautolayout" value="false"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<calculations key="constraints" value="true"/>
+	</properties>
+	<struct>
+		<and mandatory="true" name="ApoGame">
+			<graphics key="collapsed" value="false"/>
+			<and mandatory="true" name="Entity">
+				<feature mandatory="true" name="Player"/>
+			</and>
+			<and mandatory="true" name="Game">
+				<feature mandatory="true" name="Buttons"/>
+				<feature mandatory="true" name="Credit"/>
+				<feature mandatory="true" name="Editor"/>
+				<feature mandatory="true" name="LevelChooser"/>
+				<feature mandatory="true" name="Menu"/>
+				<feature mandatory="true" name="Model"/>
+				<feature mandatory="true" name="Options"/>
+			</and>
+			<feature mandatory="true" name="Level"/>
+			<and mandatory="true" name="Tools">
+				<feature name="Language"/>
+			</and>
+			<feature mandatory="true" name="Help"/>
+			<and mandatory="true" name="Image">
+				<feature name="Visibility"/>
+			</and>
+			<or mandatory="true" name="Input">
+				<feature name="KeyBoard"/>
+				<alt name="Mouse">
+					<feature name="MouseReleased"/>
+					<feature name="MousePressed"/>
+					<feature name="MouseMoved"/>
+					<feature name="MouseDragged"/>
+				</alt>
+			</or>
+			<alt name="Sound">
+				<feature name="SoundWin"/>
+				<feature name="SoundLoose"/>
+				<feature name="SoundBackground"/>
+				<feature name="SoundPop"/>
+			</alt>
+		</and>
+	</struct>
+	<constraints>
+		<rule>
+			<imp>
+				<var>Tools</var>
+				<var>Entity</var>
+			</imp>
+		</rule>
+	</constraints>
+</featureModel>
